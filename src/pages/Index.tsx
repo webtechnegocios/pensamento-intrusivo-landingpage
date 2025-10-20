@@ -12,7 +12,7 @@ import guaranteeSeal from "@/assets/guarantee-seal.png";
 const Index = () => {
   const handleCTAClick = () => {
     // Replace with actual checkout URL
-    window.location.href = "#checkout";
+    window.location.href = "https://pay.cakto.com.br/hhp2gv4_517124";
   };
 
   return (
@@ -209,7 +209,7 @@ const Index = () => {
               <div className="text-center mb-8">
                 <p className="text-lg mb-2">Seu Investimento Hoje é de Apenas:</p>
                 <p className="text-5xl md:text-6xl font-bold text-primary mb-2">
-                  12x de R$ 9,74
+                  12x de R$ 11,28
                 </p>
                 <p className="text-2xl text-muted-foreground">ou R$ 97,00 à vista</p>
               </div>
@@ -307,7 +307,7 @@ const Index = () => {
             Pronto(a) para silenciar sua mente?
           </h2>
           <p className="text-2xl md:text-3xl font-bold mb-8 text-primary">
-            Acesso Imediato por apenas 12x de R$ 9,74 (ou R$97 à vista)
+            Acesso Imediato por apenas 12x de R$ 11,28 (ou R$97 à vista)
           </p>
           
           <CTAButton onClick={handleCTAClick}>
