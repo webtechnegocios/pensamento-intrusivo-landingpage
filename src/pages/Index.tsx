@@ -208,7 +208,7 @@ const Index = () => {
 
               <div className="text-center mb-8">
                 <p className="text-lg mb-2">Seu Investimento Hoje é de Apenas:</p>
-                <p className="text-5xl md:text-6xl font-bold gradient-calm bg-clip-text text-transparent mb-2">
+                <p className="text-5xl md:text-6xl font-bold text-primary mb-2">
                   12x de R$ 9,74
                 </p>
                 <p className="text-2xl text-muted-foreground">ou R$ 97,00 à vista</p>
