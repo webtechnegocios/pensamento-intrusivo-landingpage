@@ -42,7 +42,7 @@ const Index = () => {
           <p className="text-sm uppercase tracking-wider text-muted-foreground mb-4">
             Apresentando...
           </p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 gradient-calm bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-primary font-extrabold">
             PENSAMENTO INTRUSIVO: O MÉTODO
           </h2>
           <p className="text-lg md:text-xl leading-relaxed mb-8 text-foreground/80">
