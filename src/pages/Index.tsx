@@ -7,12 +7,20 @@ import { Accordion } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
 import { ShieldCheck, CreditCard } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-product-mockup.jpg";
-import guaranteeSeal from "@/assets/guarantee-seal.png";
+import { useTracking, usePageTracking } from "@/hooks/useTracking";
 
 const Index = () => {
+  const { trackInitiateCheckout, trackAddToCart } = useTracking();
+
+  // Track page view automatically
+  usePageTracking("Landing Page", "Pensamento Intrusivo");
+
   const handleCTAClick = () => {
-    // Replace with actual checkout URL
+    // Track conversion events
+    trackInitiateCheckout();
+    trackAddToCart(97, "BRL");
+
+    // Redirect to checkout
     window.location.href = "https://pay.cakto.com.br/hhp2gv4_517124";
   };
 
@@ -63,7 +71,7 @@ const Index = () => {
 
           <div className="mb-12 animate-slide-up">
             <img
-              src={heroImage}
+              src="/images/hero-product-mockup.jpg"
               alt="Pensamento Intrusivo: O Método - Plataforma de Curso"
               className="w-full rounded-2xl shadow-elevated"
             />
@@ -256,9 +264,9 @@ const Index = () => {
           </h2>
           
           <div className="flex justify-center mb-8 animate-slide-up">
-            <img 
-              src={guaranteeSeal} 
-              alt="Garantia Incondicional de 7 Dias" 
+            <img
+              src="/images/selo-garantia-7-dias-risco-zero.png"
+              alt="Garantia Incondicional de 7 Dias - Risco Zero"
               className="w-48 h-48"
             />
           </div>
