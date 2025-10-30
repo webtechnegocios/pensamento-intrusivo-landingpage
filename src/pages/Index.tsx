@@ -45,16 +45,25 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-primary font-extrabold">
             PENSAMENTO INTRUSIVO: O MÉTODO
           </h2>
+
+          <div className="mb-8 animate-slide-up">
+            <img
+              src="/images/pensamento-intrusivo-o-metodo.png"
+              alt="Pensamento Intrusivo: O Método"
+              className="w-full max-w-2xl mx-auto rounded-2xl shadow-elevated"
+            />
+          </div>
+
           <p className="text-lg md:text-xl leading-relaxed mb-8 text-foreground/80">
-            O único sistema passo a passo que te ensina a <strong>desativar o poder</strong> dos 
-            pensamentos negativos através de técnicas práticas, para que você possa viver com mais 
+            O único sistema passo a passo que te ensina a <strong>desativar o poder</strong> dos
+            pensamentos negativos através de técnicas práticas, para que você possa viver com mais
             clareza, calma e confiança.
           </p>
-          
+
           <div className="mb-12 animate-slide-up">
-            <img 
-              src={heroImage} 
-              alt="Pensamento Intrusivo: O Método - Plataforma de Curso" 
+            <img
+              src={heroImage}
+              alt="Pensamento Intrusivo: O Método - Plataforma de Curso"
               className="w-full rounded-2xl shadow-elevated"
             />
           </div>
