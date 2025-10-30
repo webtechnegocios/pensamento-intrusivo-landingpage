@@ -6,6 +6,7 @@ import { FAQItem } from "@/components/FAQItem";
 import { Accordion } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
 import { ShieldCheck, CreditCard } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-product-mockup.jpg";
 import guaranteeSeal from "@/assets/guarantee-seal.png";
 
@@ -329,6 +330,15 @@ const Index = () => {
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-6xl mx-auto text-center text-sm text-muted-foreground">
           <p>© 2025 Pensamento Intrusivo: O Método. Todos os direitos reservados.</p>
+          <div className="mt-4 space-x-4">
+            <Link to="/termos-de-uso" className="hover:text-primary transition-colors">
+              Termos de Uso
+            </Link>
+            <span>•</span>
+            <Link to="/politica-de-privacidade" className="hover:text-primary transition-colors">
+              Política de Privacidade
+            </Link>
+          </div>
         </div>
       </footer>
     </div>
